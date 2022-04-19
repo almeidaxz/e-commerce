@@ -1,0 +1,56 @@
+/*MEDIAQUERY*/
+@media(max-width:991px){
+    .bg-light-gray{
+        background-color: transparent;
+    }
+}
+@media(max-width: 767px){
+    .bg-light-gray p{
+        font-size: 0.8em;
+    }
+}
+@media(max-width:575px){
+    .fz-3{
+        font-size: 1.5em
+    }
+    .fz-1-5{
+        margin-right: 3px !important;
+    }
+}
+@media(max-width: 550px){
+    .botao-slide{
+        padding: 0.3rem !important;
+    }
+}
+@media(max-width: 517px){
+    .bg-light-gray p{
+        font-size: 0.6em;
+    }
+}
+@media(max-width:380px){
+    .categorias{
+        flex-direction:column;
+    }
+    .categorias button{
+        margin-top:1rem;
+    }
+    .categorias button:first-child{
+        margin-top:0;
+    }
+}
+
+/*CLASSES*/
+.banner-rotativo button:hover{
+    background-color: #fba4c2 !important;
+}
+
+.bg-light-gray{
+    background-color: rgb(233,233,233);
+    font-weight: bold;
+}
+.fz-3{
+    font-size: 3em;
+}
+.div-produtos-botoes figure{
+    margin-right: 1rem;
+}

@@ -1,0 +1,12 @@
+.form-label-sz{
+    font-size: 20px;
+}
+.rounded-3{
+    border-radius: 20px !important;
+}
+input:hover{
+    border-width: 2px !important;
+}
+button:hover.btn-dark {
+    background-color: #181818 !important;
+}

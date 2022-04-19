@@ -1,0 +1,17 @@
+th{
+    font-weight: normal !important;
+}
+.fz-1-5-em{
+    font-size: 1.5em !important;
+    font-weight:normal !important;
+}
+.round-tp-l{
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+}
+.inp-size{
+    width: 50px !important;
+}
+.img-size{
+    width: 160px;
+}

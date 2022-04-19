@@ -1,0 +1,54 @@
+
+/*MEDIAQUERY*/
+@media(max-width:991px){
+    .card-width{
+        max-width: 30% !important;
+        flex-shrink: 0;
+    }
+}
+@media(max-width: 767px){
+    .card-width{
+        max-width: 30% !important;
+    }
+}
+
+@media(max-width: 550px){
+    .card-width figcaption{
+        font-size: 0.7em;
+    }
+    .card-width{
+        max-width: 40% !important;
+    }
+}
+@media(max-width: 430px){
+    .card-width{
+        max-width: 40% !important;
+    }
+}
+@media(max-width:380px){
+    .cards-p{
+        display: none;
+    }
+    .card-width{
+        max-width: 50% !important;
+    }
+    figcaption{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-width figcaption p{
+        margin-bottom: 2px;
+    }
+}
+@media(max-width: 300px){
+    .card-width{
+        max-width: 50% !important;
+    }
+}
+
+/*CLASSES*/
+.card-width{
+    max-width: 20%;
+    flex-shrink: 0;
+}

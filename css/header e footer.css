@@ -1,0 +1,89 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*MEDIAQUERY*/
+@media(max-width:380px){
+    .nav-link{
+        font-size: 7vw !important;
+    }
+    .dropdown-item{
+        font-size: 5.5vw !important;
+    }
+}
+@media(max-width: 767px){
+    .rounded-pill{
+        border-radius: 0!important;
+    }
+}
+@media(max-width: 565px){
+    .logo{
+        font-size: 4em !important;
+    }
+}
+@media(max-width: 360px){
+    .logo{
+        font-size: 3em !important;
+    }
+}
+@media(max-width:230px){
+    ul.dropdown-menu{
+        min-width: 0 !important;
+    }
+}
+/*TAGS/PSEUDOCLASSES*/
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+a:focus, button:focus{
+    box-shadow: none !important;
+}
+input:focus{
+    border: 2px solid rgb(115, 115, 220);
+    box-shadow: none !important;
+}
+body{
+    font-family: calibri;
+}
+
+/*CLASSES*/
+.logo{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+}
+.bg-dark{
+    background-color: #252525;
+}
+.bg-light-gray{
+    background-color: rgb(233,233,233);
+}
+.bebas{
+    font-family: "Bebas Neue";
+}
+.navbar{
+    font-size: 1.5em;
+}
+.round-tp-l{
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+}
+.round-tp-r{
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+}
+.fz-1-5{
+    font-size: 1.2em;
+}
+.text-warning{
+    color: #f9f27d !important;
+}
+.hover-a:hover{
+    color: #fcbcd2 !important;
+}
+.form-label-sz{
+    font-size: 20px;
+}
+.rounded-3{
+    border-radius: 20px !important;
+}

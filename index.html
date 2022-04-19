@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Navarro</title>
+        <link rel="icon" href="img\icon\favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\header e footer.css">
+        <link rel="stylesheet" href="css\cards.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h1 class="logo text-center">NAVARRO</h1></a>  
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark container-md rounded-pill">
+                <div class="container">
+                    <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-md-around justify-content-sm-center flex-md-nowrap flex-sm-wrap" id="navbar"> 
+                        <form class="container">
+                            <div class="input-group flex-nowrap">
+                                <input type="search" class="round-tp-l form-control rounded-start">
+                                <button class="input-group-text rounded-end round-tp-r">
+                                    <span class="fas fa-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav bebas mx-3">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-light">Homepage</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown">Feminino</a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                     <a href="html\catalogo-bl-fem.html" class="dropdown-item">Blusas</a>
+                                </li>
+                                <li>
+                                    <a href="html\catalogo-vestidos.html" class="dropdown-item">Vestidos</a>
+                                </li>
+                                <li>
+                                    <a href="html\catalogo-saias.html" class="dropdown-item">Saias</a>
+                                </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown">Masculino</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="html\catalogo-bl-masc.html" class="dropdown-item">Blusas</a>
+                                </li>
+                                <li>
+                                    <a href="catalogo-bermudas.html" class="dropdown-item">Bermudas</a>
+                                </li>
+                                <li>
+                                    <a href="\catalogo-calcas.html" class="dropdown-item">Calças</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d-sm-none nav-item">
+                            <a href="html\wishlist.html" class="nav-link text-light">Lista de desejos</a>
+                        </li>
+                        <li class="d-sm-none nav-item">
+                            <a href="html\carrinho.html" class="nav-link text-light">carrinho</a>
+                        </li>
+                        <li class="d-sm-none nav-item">
+                            <a href="html\login.html" class="nav-link text-light">login</a>
+                        </li>
+                        <li class="d-sm-none nav-item">
+                            <a href="html\criar-conta.html" class="nav-link text-light">criar conta</a>
+                        </li>
+                    </ul>
+                    <ul class="d-none d-sm-flex navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown" data-bs-toggle="dropdown"><span class="fas fa-user"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="html\criar-conta.html" class="dropdown-item bebas">Criar conta</a>
+                                </li>
+                                <li>
+                                    <a href="html\login.html" class="bebas dropdown-item">Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="html\wishlist.html" class="nav-link"><span class="fas fa-heart"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="html\carrinho.html" class="nav-link"><span class="fas fa-shopping-cart"></span></a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--BANNER E BOTÕES PRA ALTERNAR-->
+            <div class="banner-rotativo">
+                <!--BANNER-->
+                <div class="mx-auto my-3 mx-3 container-md container-fluid-sm">
+                    <img id="banner" class="img-fluid rounded" src="img\banners\lançamentos.png" alt="banner dinâmico com imagens alternando">
+                </div>
+                <!--BOTÕES PARA ALTERNAR O BANNER-->
+                <div class="text-center">
+                    <button class="btn bg-dark botao-slide rounded-circle p-2" type="button"></button>
+                    <button class="btn bg-dark botao-slide rounded-circle p-2 mx-1 mx-sm-3" type="button"></button>
+                    <button class="btn bg-dark botao-slide rounded-circle p-2" type="button"></button>
+                </div>
+                <!--CATEGORIAS-->
+                <div class="container text-center my-5 fz-1-5 d-flex justify-content-center justify-content-md-around categorias">
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button" onclick="document.location='html/catalogo-bermudas.html'">bermudas</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 mx-0 mx-sm-1" type="button" onclick="document.location='html/catalogo-calcas.html'">calças</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5" type="button" onclick="document.location='html/catalogo-vestidos.html'">vestidos</button>
+                    <button class="btn bg-dark bebas px-md-5 text-light fz-1-5 ms-0 ms-sm-2" type="button" onclick="document.location='html/catalogo-saias.html'">saias</button>
+                </div>
+            </div>
+
+            <!--BANNER 'PROMO' ABAIXO DAS CATEGORIAS
+            flex-sm-row flex-column
+            -->
+            <div class="bg-light-gray rounded-3 container-lg container-fluid">
+                <div class="container">
+                    <div class="cards-p row text-center py-lg-2 pb-0 mb-0 mt-5 align-items-center">
+                        <div class="col-3 border-end border-3">
+                            <span class="fa fa-credit-card"></span>
+                            <p class="mb-0">PARCELE EM</p>
+                            <p class="text-danger">6X SEM JUROS</p>
+                        </div>
+                        <div class="col-3 border-end border-3">
+                            <span class="fa fa-truck"></span>
+                            <p class="text-danger mb-0">FRETE GRÁTIS</p>
+                            <p>ACIMA DE <b class="text-danger">R$49</b></p>
+                        </div>
+                        <div class="col-3 border-end border-3">
+                            <span class="fa fa-gift"></span>
+                            <p class="text-dange mb-0">CUPONS DE <b class="text-danger">R$15</b></p>
+                            <p>AO COMPRAR</p>
+                        </div>
+                        <div class="col-3">
+                            <span class="fa fa-dollar-sign"></span>
+                            <p class="text-danger mb-0">R$12 OFF</p>
+                            <p>NA SUA PRIMEIRA COMPRA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto container-md container-fluid">
+                    <img class="img-fluid rounded" src="img\banners\promo.png" alt="banner com um retângulo central rotacionado com a palavra 'promo' dentro, um quadrado a esquerda com a foto de uma modelo negra com vestido amarelo e um outro quadrado a direita com a foto de uma modela asiática com casaco ciano">
+                </div>
+                <div class="container">
+                    <div class="cards-p row text-center py-2 my-2">
+                        <div class="col-3 border-end border-3">
+                            <h1>R$10 <small class="bg-dark text-light px-3 rounded-pill">OFF</small></h1>
+                            <p>Compras acima de R$50</p>
+                        </div>
+                        <div class="col-3 border-end border-3">
+                            <h1>R$25 <small class="bg-dark text-light px-3 rounded-pill">OFF</small></h1>
+                            <p>Compras acima de R$100</p>
+                        </div>
+                        <div class="col-3 border-end border-3">
+                            <h1>R$35 <small class="bg-dark text-light px-3 rounded-pill">OFF</small></h1>
+                            <p>Compras acima de R$150</p>
+                        </div>
+                        <div class="col-3">
+                            <h1>R$100 <small class="bg-dark text-light px-3 rounded-pill">OFF</small></h1>
+                            <p>Compras acima de R$500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PRODUTOS ROTACIONANDO-->
+            <div class="div-produtos-botoes container-fluid container-md">
+                <div class="d-flex align-items-center">
+                    <button class="border-0 bg-transparent" id="b1-interval" type="button"><span class="fz-3 fa fa-caret-left"></span></button>
+                    <div class="div-produtos-interval overflow-hidden mx-auto d-flex flex-nowrap my-5 my-md-0" style="max-width: 100%">
+                        <figure class="card card-width bg-light" data-bl="quadriculado preto vermelho">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\blusas masc\camisa quadriculada vermelha frente.webp" data-laterais="..\img\blusas masc\camisa quadriculada vermelha atrás.webp,..\img\blusas masc\camisa quadriculada vermelha gola.webp,..\img\blusas masc\camisa quadriculada vermelha manga.webp" data-descricao="Cor: Quadriculado Vermelho<br>Estilo: Casual<br>Decote: Colarinho<br>Comprimento da Manga: Manga Comprida<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$44,10" data-parcelas="5x de R$7,37 sem juros">
+                                <img class="card-img-top img-fluid" src="img\blusas masc\camisa quadriculada vermelha frente.webp" alt="camisa vermelha quadriculada">
+                            </a>
+                            <figcaption class="card-body text-center">
+                                <p class="prod-titulo card-title fw-bold text-center">Camisa Vermelha Quadriculada</p>
+                                <p class="float-none float-md-start preco card-text d-inline-block">R$36,87</p>
+                                <del class="float-none float-md-end text-danger">R$44,10</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="branco estampado">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\blusa fem\blusa arco iris frente.webp" data-laterais="..\img\blusa fem\blusa arco iris gola.webp,..\img\blusa fem\blusa arco iris atras.webp,..\img\blusa fem\blusa arco iris manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Estiramento Leve<br>Material: Poliéster" data-desconto="R$38,00" data-parcelas="5x de R$7,06 sem juros">
+                                <img class="card-img-top img-fluid" src="img\blusa fem\blusa arco iris frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Cropped Listrado Branco Arco-Íris</p>
+                                <p class="preco card-text d-inline-block">R$35,30</p>
+                                <del class="float-end text-right text-danger">R$38,00</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="preto florido">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\vestidos\vestido preto transparente frente.webp" data-laterais="..\img\vestidos\vestido preto transparente atrás.webp,..\img\vestidos\vestido preto transparente bainha.webp,..\img\vestidos\vestido preto transparente cima.webp" data-descricao="Cor: Preto<br>Estilo: Boho<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Malha" data-desconto="R$50,00" data-parcelas="5x de R$8,58 sem juros">
+                                <img class="card-img-top img-fluid" src="img\vestidos\vestido preto transparente frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Vestido Preto Transparente Bordado</p>
+                                <p class="preco card-text d-inline-block">R$42,90</p>
+                                <del class="float-end text-right text-danger">R$50,00</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="rosa estampado">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\vestidos\vestido morango frente.webp" data-laterais="..\img\vestidos\vestido morango atrás.webp,..\img\vestidos\vestido morango bainha.webp,..\img\vestidos\vestido morango ziper.webp" data-descricao="Cor: Rosa<br>Estilo: Kawaii<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Médio<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$54,80" data-parcelas="5x de R$5,60 sem juros">
+                                <img class="card-img-top img-fluid" src="img\vestidos\vestido morango frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold d-inline-block">Vestido Morangos Rosa Alça</p>
+                                <p class="preco card-text d-inline-block">R$35,00</p>
+                                <del class="float-end text-right text-danger">R$54,80</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="azul">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\saias\saia azul frente.webp" data-laterais="..\img\saias\saia azul atrás.webp,..\img\saias\saia azul bainha.webp,..\img\saias\saia azul topo.webp" data-descricao="Cor: Azul Bebê<br>Estilo: Casual<br>Cintura: Cintura Alta<br>Comprimento: Curto<br>Tecido: Não estirável<br>Revestimento: Forrado<br>Material: Algodão" data-desconto="R$31,90" data-parcelas="5x de R$5,32 sem juros">
+                                <img class="card-img-top img-fluid" src="img\saias\saia azul frente.webp" alt="saia azul curta com corte na perna">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Saia Azul Curta Corte Perna</p>
+                                <p class="preco card-text d-inline-block">R$26,60</p>
+                                <del class="float-end text-right text-danger">R$31,90</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="branco estampado">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\blusa fem\blusa borboletas frente.webp" data-laterais="..\img\blusa fem\blusa borboletas atrás.webp,..\img\blusa fem\blusa borboletas borboleta.webp,..\img\blusa fem\blusa borboleta manga.webp" data-descricao="Cor: Branco<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Regular<br>Comprimento: Curto<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$38,95" data-parcelas="5x de R$6,92 sem juros">
+                                <img class="card-img-top img-fluid" src="img\blusa fem\blusa borboletas frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Cropped Borboletas Sem Mangas</p>
+                                <p class="preco card-text d-inline-block">R$34,60</p>
+                                <del class="float-end text-right text-danger">R$38,95</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="estampado">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\blusas masc\blusa marrom frente.webp" data-laterais="..\img\blusas masc\blusa marrom atrás.webp,..\img\blusas masc\blusa marrom gola.webp,..\img\blusas masc\blusa marrom manga.webp" data-descricao="Cor: Marrom<br>Estilo: Casual<br>Decote: Redondo<br>Comprimento da Manga: Regular<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Estiramento Leve<br>Material: Algodão" data-desconto="R$32,15" data-parcelas="5x de R$5,70 sem juros">
+                                <img class="card-img-top img-fluid" src="img\blusas masc\blusa marrom frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Blusa Marrom Estampa Dinossauro</p>
+                                <p class="preco card-text d-inline-block">R$28,50</p>
+                                <del class="float-end text-right text-danger">R$32,15</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="preto estampado amarelo">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\blusas masc\camisa girassol frente.webp" data-laterais="..\img\blusas masc\camisa girassol gola.webp,..\img\blusas masc\camisa girassol atrás.webp,..\img\blusas masc\camisa girassol botão.webp" data-descricao="Cor: Preto<br>Estilo: Casual<br>Decote: Colarinho<br>Comprimento da Manga: Curto<br>Tipo de manga: Regular<br>Comprimento: Regular<br>Tecido: Não Estirável<br>Material: Poliéster" data-desconto="R$50,70" data-parcelas="5x de R$9,00 sem juros">
+                                <img class="card-img-top img-fluid" src="img\blusas masc\camisa girassol frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Camisa Estampada Girassóis</p>
+                                <p class="preco card-text d-inline-block">R$45,00</p>
+                                <del class="float-end text-right text-danger">R$50,70</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="vermelho">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\vestidos\vestido vermelho frente.webp" data-laterais="..\img\vestidos\vestido vermelho alça.webp,..\img\vestidos\vestido vermelho bainha.webp,..\img\vestidos\vestido vermelho ziper.webp" data-descricao="Cor: Vermelho<br>Estilo: Boho<br>Decote: Quadrado<br>Comprimento da Manga: Sem Manga<br>Tipo de manga: Alça<br>Comprimento: Curto<br>Tecido: Não estirável<br>Material: Poliéster" data-desconto="R$33,00" data-parcelas="5x de R$5,18 sem juros">
+                                <img class="card-img-top img-fluid" src="img\vestidos\vestido vermelho frente.webp">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Vestido Vermelho Boho Alça</p>
+                                <p class="preco card-text d-inline-block">R$25,90</p>
+                                <del class="float-end text-right text-danger">R$33,00</del>
+                            </figcaption>
+                        </figure>
+                        <figure class="card card-width bg-light" data-bl="vermelho quadriculado">
+                            <a class="link-produto" href="html\produto.html" data-principal="..\img\saias\saia vermelha quadriculada.webp" data-laterais="..\img\saias\saia vermelha quadriculada trás.webp,..\img\saias\saia vermelha quadriculada topo.webp,..\img\saias\saia vermelha quadriculada ziper.webp" data-descricao="Cor: Vermelho Quadriculado<br>Estilo: Formal<br>Cintura: Natural<br>Comprimento: Curto<br>Tecido: Não Estirável<br>Revestimento: Forrado<br>Material: Algodão" data-desconto="R$54,80" data-parcelas="5x de R$8,71 sem juros">
+                                <img class="card-img-top img-fluid" src="img\saias\saia vermelha quadriculada.webp" alt="saia vermelha quadriculada'">
+                            </a>
+                            <figcaption class="card-body">
+                                <p class="prod-titulo card-title fw-bold">Saia Vermelha Quadriculada</p>
+                                <p class="preco card-text d-inline-block">R$43,55</p>
+                                <del class="float-end text-right text-danger">R$54,80</del>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <button class="border-0 bg-transparent" id="b2-interval" type="button"><span class="fz-3 fa fa-caret-right"></span></button>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark pt-5 pb-2 mt-0 mt-md-5">
+            <div class="container">
+                <div class="d-block d-sm-flex justify-content-around align-items-md-center mb-5 text-center">
+                    <div class=" text-light px-3">
+                        <h3 class="bebas text-warning">quem somos</h3>
+                        <p>
+                            A Navarro é uma empresa<br> brasileira que se dedica a<br>trazer moda e roupas<br>acessíveis para todo o país.
+                        </p>
+                    </div>
+                    <div class="text-light px-3">
+                        <h3 class="bebas text-warning">Parceiros</h3>
+                        <ul class="px-0 list-unstyled">
+                            <li><a class="hover-a text-light text-decoration-none" href="https://br.shein.com/" target="_blank">Shein</a></li>
+                            <li><a class="hover-a text-light text-decoration-none" href="https://www.zaful.com/" target="_blank">Zaful</a></li>
+                            <li><a class="hover-a text-light text-decoration-none" href="https://www.bershka.com/" target="_blank">Bershka</a></li>
+                            <li><a class="hover-a text-light text-decoration-none" href="https://www.zara.com/br/" target="_blank">Zara</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-light px-3">
+                        <h3 class="bebas text-warning">Contato</h3>
+                        <adress class="text-light">
+                            <div>
+                                <span class="fa fa-home"></span>
+                                <p class="d-inline-block my-0">Salvador, BA</p>
+                            </div>
+                            <div>
+                                <span class="fa fa-envelope"></span>
+                                <a href="mailto:navarro@gmail.com" target="_blank" class="hover-a text-light text-decoration-none">navarro@gmail.com</a>
+                            </div>
+                            <div>
+                                <span class="fa fa-phone"></span>
+                                <a href="tel:7198865-9972" target="_blank" class="hover-a text-light text-decoration-none">(71)99878-5545</a>
+                            </div>
+                            <div>
+                                <span class="fab fa-whatsapp"></span>
+                                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=7198865-9972" target="_blank" class="hover-a text-light text-decoration-none">(71)98865-9972 </a>
+                            </div>
+                        </adress>
+                    </div>
+
+                </div>
+                <div class="text-center my-5">
+                    <a class="hover-a text-light" href="https://www.facebook.com/" target="_blank"><span class="fz-1-5 fab fa-facebook-f"></span></a>
+                    <a class="hover-a text-light mx-3" href="https://www.instagram.com" target="_blank"><span class="fz-1-5 fab fa-instagram"></span></a>
+                    <a class="hover-a text-light" href="https://goo.gl/maps/VtZ64DC5GRAuqfNh8" target="_blank"><span class="fz-1-5 fas fa-map-marker-alt"></span></a>
+                </div>    
+                <div class="div-copywright text-center text-light">
+                    <p>© 2021 Copyright: navarro.com</p>
+                </div>       
+            </div>
+        </footer>
+        <script src="js\banner e produtos.js"></script>
+        <script src="js\catalogo.js"></script>
+        <script src="js\produto.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
